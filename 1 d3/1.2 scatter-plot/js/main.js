@@ -113,7 +113,7 @@ async function drawScatterPlot() {
     .attr("y", dimensions.margin.bottom - 10) // Set the y position of the text element to be slightly above the bottom margin
     .attr("fill", "black") // Set the fill color of the text element
     .style("font-size", "1.4em") // Set the font size of the text element
-    .html("Dew Point (&deg;F)"); // Set the text content of the text element
+    .html("Dew Point (&deg;C)"); // Set the text content of the text element
   const yAxisLabel = yAxis
     .append("text") // Append a text element to the y-axis g element
     .attr("x", -dimensions.boundedHeight / 2) // Set the x position of the text element to be in the middle of the y-axis (rotated)
@@ -123,7 +123,5 @@ async function drawScatterPlot() {
     .style("transform", "rotate(-90deg)") // Rotate the text element 90 degrees counter-clockwise
     .style("text-anchor", "middle") // Center the text element
     .html("Humidity (%)"); // Set the text content of the text element
-
-  console.log(dots);
 }
 drawScatterPlot();
