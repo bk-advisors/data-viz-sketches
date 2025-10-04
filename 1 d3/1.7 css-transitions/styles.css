@@ -1,0 +1,15 @@
+/* styles.css */
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: coral;
+  transition: transform 1s steps(6), background 0.5s ease;
+  margin: 50px;
+}
+/* to enable transform */
+
+.box:hover {
+  background: yellowgreen;
+  transform: translateX(30px);
+}
